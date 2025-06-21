@@ -13,8 +13,23 @@ function click() {
 // click();
 
 function changeElement() {
-    text.innerHTML = "welcome to my <strong> website </strong>"
+    text.innerHTML = "welcome to my <strong> website </strong>";
 }
+// const finalData = document.querySelector('#demo').style.color = 'red';
+// finalData.innerHTML = 'text has been changed'
+// const h1 = document.querySelector('h1');
+// h1.textContent = 'welcome';
+// const img = document.querySelector('.image');
+// img.document.createElement = 'img';
+// img.src = '';
+// img.alt = '';
+// photos.appendChild(img);
+// if(photos.lastChild) {
+// photos.removeChild(photos.lastChild);
+// }else {
+//     alert('there is no data!');
+// }
+
 
 function changeText() {
     document.querySelector('#demo').innerHTML = "Text has been changed";
