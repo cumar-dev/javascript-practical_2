@@ -15,3 +15,19 @@ function remove() {
     }
    
 }
+
+
+
+const links = document.querySelector('#links');
+function enter() {
+    const outputData = document.createElement('a');
+    outputData.setAttribute('href', '#');
+    outputData.textContent = 'follow';
+    outputData.style.textDecoration = 'none';
+    links.appendChild(outputData);
+    // outputData.removeAttribute('href');
+}
+
+
+
+
