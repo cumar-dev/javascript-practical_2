@@ -63,4 +63,4 @@ function click() {
         console.log(data[i]);
     }
 }
-click();
+// click();
