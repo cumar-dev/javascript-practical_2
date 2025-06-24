@@ -47,3 +47,37 @@ function javascript() {
       btn3.style.cursor = 'pointer';
       btn3.style.transition = 'all 0.3s ease'
 }
+
+const checkBox = document.querySelector('#subscribe');
+const status = document.querySelector('#status');
+
+checkBox.addEventListener('change', function(event) {
+   if(event.target.checked) {
+    status.textContent = 'you are subcribed';
+   }else{
+      status.textContent = 'you are unSubscribed';
+   }
+})
+
+
+const fileUpload = document.querySelector('#fileUpload');
+const fileName = document.querySelector('#fileName');
+
+fileUpload.addEventListener('change', function(events) {
+  const selectedFile = events.target.files[0];
+
+  if(selectedFile) {
+    fileName.textContent = `selected file: ${selectedFile.name}`;
+  }else {
+        fileName.textContent = 'No file selected.';
+      }
+})
+
+const fileUploaded = document.querySelector('#fileUploaded');
+
+fileUploaded.addEventListener('change', function(eventes) {
+  const fileSelected = eventes.target.files;
+  for(let i = 0; i < fileSelected.length; i++) {
+    console.log(fileSelected[i].name);
+  }
+})
