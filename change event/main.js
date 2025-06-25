@@ -81,3 +81,15 @@ fileUploaded.addEventListener('change', function(eventes) {
     console.log(fileSelected[i].name);
   }
 })
+
+const number = document.querySelector('#number');
+const inputNumber = document.querySelector('#inputNumber');
+
+inputNumber.addEventListener('change', function() {
+  number.textContent = `inputNumber is: ${inputNumber.value}`;
+  number.style.padding = '15px';
+  number.style.fontSize = '17px';
+  number.style.backgroundColor = 'blue';
+  number.style.borderRadius = '10px';
+  number.style.color = 'white';
+})
