@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f1faee;
+}
+
+.container {
+    max-width: 500px;
+    width: 100%;
+    margin: 50px auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+.container h1 {
+    text-align: center;
+}
+
+#toDoform {
+    display: flex;
+    margin-bottom: 20px;
+}
+#appTodo {
+    flex: 1;
+    padding: 15px;
+    font-size: 1rem;
+}
+
+#toDoform button {
+    padding: 10px;
+    font-size: 1rem;
+}
+#todoList {
+    list-style: none;
+}
+
+.todo-item {
+display: flex;
+align-items: center;
+padding: 15px;
+background-color: #eee;
+margin-bottom: 10px;
+}
+.todo-item.completed .task {
+    text-decoration: line-through;
+    color: gray;
+}
+.todo-item .task {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.todo-item button {
+    margin-left: 5px;
+}
+

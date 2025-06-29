@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Roboto", sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #CDD6D0;
+    color: white;
+}
+.container {
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    background-color: #694f5d; 
+    border-radius: 1rem;
+}
+#formRegistration{
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+} 
+#formRegistration h1 {
+    font-size: 2rem;
+    font: 600;
+    line-height: 1.25rem;
+    font-style: normal;
+    margin-bottom: 10px;
+}
+#formRegistration label {
+    font-size: 1.50rem;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 18px;
+}
+#formRegistration input, button {
+    max-width: 300px;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 1.21rem;
+    font-size: 1.6rem;
+    /* text-align: center; */
+    color: #6699cc;
+    outline: none;
+}
+#formRegistration button {
+     outline: none;
+     margin-bottom: 10px;
+}
+#error {
+    color: red;
+    font-size: 1rem;
+    font-weight: 300;
+}
+#success {
+    font-size: 1rem;
+    font-weight: 300;
+    color: rgb(59, 149, 59);
+}
+.invalid {
+    border: 2px solid red;
+    border-radius: 1.21rem;
+}
+.valid {
+    border: 2px solid green;
+    border-radius: 1.21rem;
+}
