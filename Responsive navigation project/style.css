@@ -1,0 +1,111 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.brand-title {
+    font-size: 1.5em;
+    line-height: 60px;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 0px 20px;
+}
+.navbar-links {
+  height: 100%;
+}
+.navbar-links ul{
+    /* height: 100%; */
+    display: flex;
+    /* gap: 15px; */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.navbar-links li {
+    padding: 0 10px;
+}
+ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    line-height: 60px;
+    display: block;
+}
+ul li a:hover {
+    background-color: #444;
+    border-radius: 5px;
+    /* padding: 0px 10px; */
+}
+.toggle-button {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    display: none;
+     flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+
+@media(max-width:768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar-links ul {
+     /* text-align: center; */
+     flex-direction: column;
+    }
+    .navbar li {
+        text-align: center;
+    }
+        .navbar-links {
+            width: 100%;
+           max-height: 0;
+           opacity: 0;
+           overflow: hidden;
+            transition: max-height 0.5s ease-in, opacity 0.5s ease-in;
+        }
+     .toggle-button {
+        display: flex;
+     }   
+
+     ul li a  {
+         padding: 10px;
+        line-height: 20px;
+     }
+
+     .navbar.active .navbar-links {
+        max-height: 300px;
+        opacity: 1;
+     }
+     .navbar.active .toggle-button .bar:nth-child(2) {
+        /* background-color: green; */
+        opacity: 0;
+     }
+      .navbar.active .toggle-button .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+        /* rotate: (45deg); */
+      }
+     .navbar.active .toggle-button .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+        }
+}
