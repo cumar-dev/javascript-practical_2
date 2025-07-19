@@ -7,8 +7,8 @@ function switchMode() {
     toggleButton.classList.toggle("dark-mode");
 
     if(document.body.classList.contains("dark-mode")) {
-      toggleButton.textContent = "Togal Dark mode";
-  
+      // toggleButton.textContent = "Togal Dark mode";
+      toggleButton.textContent = "";
       localStorage.setItem("mode", "Dark");
 
     }else {
