@@ -19,6 +19,7 @@ const sun = document.querySelector('.sun');
 
 themeToggle.addEventListener('click', function() {
     document.body.classList.toggle('dark-mode');
+    themeToggle.classList.toggle('dark-mode');
    updateIcons();
 })
 
