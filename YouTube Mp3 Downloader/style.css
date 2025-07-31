@@ -147,3 +147,19 @@ header {
     padding: 0 10px;
     cursor: pointer;
 }
+
+ @media (max-width: 768px) {
+    #video-player {
+      height: 300px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .video-item {
+      width: 100%;
+    }
+  
+    #video-player {
+      height: 200px;
+    }
+  }
