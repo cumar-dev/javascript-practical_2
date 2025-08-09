@@ -46,3 +46,25 @@ window.addEventListener('DOMContentLoaded', function() {
          moon.style.display = 'none';
     }
 })
+
+const cartProduct = document.querySelector('#cart-items');
+
+document.querySelectorAll('#buyButton').forEach(button => {
+    button.addEventListener('click', function(e) {
+        const product = e.target.closest('.product');
+        const productImage = product.querySelectorAll('#product-photo').src;
+        const productTitle = product.querySelectorAll('#product-title').textContent;
+         const productInfo = product.querySelectorAll('#product-info').textContent;
+         const productPrice = product.querySelectorAll('#product-price').textContent;
+
+         const productBought = document.createElement('li');
+         productBought.innerHTML = `
+          <img src="${productImage}" alt="" width="50" />
+      <h5>${productTitle}</h5>
+      <p>${productInfo}</p>
+      <strong>${productPrice}</strong>
+      `;
+      cartProduct.appendChild(productBought);
+    })
+})
+
